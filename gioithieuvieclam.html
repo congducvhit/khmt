@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="./images/logodoan.png" rel="shortcut icon">
+    <meta name="description" content="Đoàn trường Đại học Công nghệ thông tin và truyền thông Việt Hàn,  doantn.vku.udn.vn">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/gioithieuvieclam.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/grid.css">
+  <title>Giới thiệu việc làm</title>
+
+</head>
+<body>
+   <div class="container">
+        
+
+      <div class="tab-content">
+            <a href="lienhe.html" style="color: #FFF;font-size: 12px"><i class="fa fa-address-book"
+          aria-hidden="true"></i> Liên hệ</a> <span style="color: #fff">|</span>
+            <a target="_blank" href="https://g.page/dai-hoc-viet-han?share" style="color: #FFF;font-size: 13px"><i class="fa fa-map"
+          aria-hidden="true"></i> Map</a> <span style="color: #fff">|</span>
+            <a href="login.html" style="color: #FFF;font-size: 12px"><i
+          class="fas fa-user-circle"></i></i> Đăng nhập</a>
+            <div id="MyClockDisplay" class="clock" style="font-size: 12px;"></div>
+          
+            <i class="fas fa-clock" style="float: right;font-size: 15px;padding-top: 2px;padding-right: 5px;color: #fff"></i>
+            <script type="text/javascript">
+                function showTime() {
+                    var date = new Date;
+                    var h = date.getHours();
+                    var m = date.getMinutes();
+                    var s = date.getSeconds();
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                    s = (s < 10) ? "0" + s : s;
+                    var time = h + ":" + m + ":" + s;
+                    document.getElementById("MyClockDisplay").innerText = time;
+                    document.getElementById("MyClockDisplay").textContent = time;
+                    setTimeout(showTime, 1000);
+                }
+                showTime();
+            </script>
+        </div>
+        <div class="header-search-2">
+            <input type="text" class="input-search" id="input-search-2" placeholder="Tìm kiếm..."> <button id="button-search" class="btn-search-2"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+       <div class="header">
+       <!-- header --> 
+          <header>
+        <img src="images/logovku1.png" alt="" style="max-width: 600px;width: 100%; height: auto; align-items: center;">
+        <div class="header-introduction d-flex justify-content-around" style="flex-wrap: nowrap;">
+           <img src="images/tn_vn.svg" class="col-md-4 col-2 p-1" alt="" style="width:140px; height: 90px;margin-left: 20px;">
+           <div class="header-title col-md-8 col-9 p-1">
+             <p class="title1">Đoàn Thanh Niên Cộng Sản Hồ Chí Minh</p>
+             <p class="title2">Trường ĐH Công nghệ thông tin Và truyền thông Việt Hàn</p>
+           </div>
+           <img src="images/logo_doan.svg"  class="col-md-2 col-2 p-1" alt="" style="width:180px; height: 120px;margin-top: -18px;margin-right: 20px;" >
+        </div>
+      </header>
+        
+      </div>
+
+
+    
+      <div class="body">
+        <div class="menu">
+        <nav class="navbar navbar-expand-xl navbar-dark pt-1 pb-1 nav-header">
+           <a class="navbar-brand" href="index.html"><img style="color: black;" src="./images/homew.png" height="25"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a  style="color: #fff" class="nav-link" href="index.html">Trang chủ</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Giới thiệu
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="gioithieuchung.html">Giới thiệu chung</a>
+        <a class="dropdown-item" href="gioithieudoan.html">Giới thiệu đoàn trường</a>
+        <a class="dropdown-item" href="anhhoatdong.html">Ảnh hoạt động</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a  style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Tin tức
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="tintuchoatdong.html">Tin tức hoạt động</a>
+        <a class="dropdown-item" href="kehoach.html">Kế hoạch</a>
+        <a class="dropdown-item" href="thongbao.html">Thông báo</a>
+        <a class="dropdown-item" href="tailieu.html">Tài liệu</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a  style="color: #fff" class="nav-link" href="nghiencuukhoahoc.html">Nghiên cứu khoa học</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a  style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Hỗ trợ sinh viên
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="hocbong.html">Học bổng</a>
+        <a class="dropdown-item" href="gioithieuvieclam.html">Giới thiệu việc làm</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a  style="color: #fff" class="nav-link" href="lienhe.html">Liên hệ</a>
+    </li>
+    
+  </ul>
+</nav>
+<br>
+
+      
+        <div class="maincontent col-md-8 col-12">
+           <div class="title-top bubbles">
+  <span class="card-title"><h5 class="card-title"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i> <i style="font-size: 35px" class="far fa-newspaper" ></i>  GIỚI THIỆU VIỆC LÀM </h5></span></div><br><br>
+        
+         <ul class="list-group">
+             
+           <li class="list-group-item">
+           <a style="text-decoration: none;" href="http://vku.udn.vn/hop-tac-quoc-te/hop-tac-quoc-te/co-hoi-viec-lam-tai-nhat-ban-rong-mo-doi-voi-sinh-vien-khoa-cong-nghe-thong-tin-va-truyen-thong.html"><img style="float: left;padding-right: 15px" src="./images/viec_lam01.jpg">
+            <div class="content"> <span style="padding-left: 15px;font-weight: bold;" class="table-info"><i class="fas fa-caret-right"></i> Cơ hội việc làm tại Nhật Bản rộng mở đối với sinh viên Khoa Công nghệ Thông tin và Truyền thông</span>
+            <p  style="text-align: justify;;">Chiều ngày 15/10/2018, Lãnh đạo Khoa CNTT&TT đã có buổi tiếp đón và làm việc với đoàn doanh nghiệp đến từ Nhật Bản JVIT - BPA. Tại buổi làm việc, PGS. TS. Huỳnh Công Pháp đã có những thảo luận liên quan đến định hướng chiến lược về...</p>
+          </div> </a> 
+          </li>
+           <li class="list-group-item">
+           <a style="text-decoration: none;" href="http://daotao.vku.udn.vn/thong-bao-ctsv/gioi-thieu-sinh-vien-nhan-hoc-bong-cua-cong-ty-co-phan-jesco-asia-nhat-ban-149.html"><img style="float: left;padding-right: 15px" src="./images/viec_lam02.jpg">
+            <div class="content"> <span style="padding-left: 15px;font-weight: bold;" class="table-info"><i class="fas fa-caret-right"></i> Cơ hội được thực tập và làm việc tại LG dành cho sinh viên</span>
+            <p  style="text-align: justify;">Theo biên bản ghi nhớ, VKU và Tập đoàn LG sẽ hợp tác ở 2 chương trình chính gồm chương trình thực tập và tuyển dụng sinh viên tốt nghiệp. Ngoài ra, hai bên duy trì và phát triển quan hệ hợp tác lâu dài trong tương lai,...</p>
+          </div> </a> 
+          </li>
+           <li class="list-group-item">
+           <a style="text-decoration: none;" href="http://vku.udn.vn/thong-bao//thong-bao-cong-ty-iotlink-tuyen-thuc-tap-sinh-2020.html"><img style="float: left;padding-right: 15px" src="./images/logo_vku.png">
+            <div class="content"> <span style="padding-left: 15px;font-weight: bold;" class="table-info"><i class="fas fa-caret-right"></i> Thông báo Công ty IOTLink tuyển thực tập sinh 2020</span>
+            <p  style="text-align: justify;">Công ty IOTLink thành lập vào tháng 6/2017 với sự dẫn dắt của các nhà lãnh đạo đến từ nhiều công ty công nghệ như: Microsoft, Yahoo, Qualcom, Sony Ericsson, VNG Cloud,.... Với mục tiêu xây dựng một nền tảng công nghệ để phát triển đất nước - một nền tảng nhằm bắt kịp xu hướng công nghiệp 4.0 ...</p>
+          </div> </a> 
+          </li>
+          
+           <li class="list-group-item">
+           <a style="text-decoration: none;" href="http://vku.udn.vn/tin-tuc/vku-tham-va-lam-viec-voi-cong-ty-codecomplete-vietnam-va-cong-ty-co-phan-cong-nghe-tam-hop-nhat-unitech-tao-cau-noi-cho-sinh-vien-va-doanh-nghiep.html"><img style="float: left;padding-right: 15px" src="./images/viec_lam03.jpg">
+            <div class="content"> <span style="padding-left: 15px;font-weight: bold;" class="table-info"><i class="fas fa-caret-right"></i>VKU thăm và làm việc với Công ty CodeComplete VietNam và Công ty Cổ phần Công nghệ Tâm Hợp Nhất (Unitech): Tạo cầu nối cho Sinh viên và Doanh nghiệp</span>
+            <p  style="text-align: justify;">Đặc biệt, trong tháng 4, nhu cầu tuyển Fresher khá lớn nên đã tạo cơ hội cho hàng loạt các tân binh gia nhập ngành phần mềm. Tuy nhiên, dịch bùng phát có thể làm cho ...</p>
+          </div> </a> 
+          </li>
+           <li class="list-group-item">
+           <a style="text-decoration: none;" href="http://vku.udn.vn/tin-tuc/tin-tuc-hoat-dong/vku-gan-ket-giua-nha-truong-va-nha-tuyen-dung.html"><img style="float: left;padding-right: 15px" src="./images/viec_lam04.jpg">
+            <div class="content"> <span style="padding-left: 15px;font-weight: bold;" class="table-info"><i class="fas fa-caret-right"></i> VKU: Gắn kết giữa nhà trường và nhà tuyển dụng</span>
+            <p  style="text-align: justify;">Chiều ngày 14/04/2021, Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn (VKU) đã đến thăm và làm việc với Công ty LogiGear và Công ty TNHH Rikkeisoft chi nhánh Đà Nẵng,Về phía VKU, dẫn đầu đoàn công tác, TS. Trần Thế Sơn  -  Đảng ủy viên và lãnh đạo các đơn vị, phòng, khoa thuộc..</p>
+          </div> </a> 
+          </li>
+           <li class="list-group-item">
+           <a style="text-decoration: none;" href="http://vku.udn.vn/tin-tuc-hoat-dong/tin-tuc-hoat-dong/amazon-cong-bo-ke-hoach-ra-mat-trung-tam-nghien-cuu-doi-moi-robot.html"><img style="float: left;padding-right: 15px" src="./images/tintuc8.png">
+            <div class="content"> <span style="padding-left: 15px;font-weight: bold;" class="table-info"><i class="fas fa-caret-right"></i> Amazon công bố kế hoạch ra mắt trung tâm nghiên cứu đổi mới robot</span>
+            <p  style="text-align: justify;">Theo một số báo cáo, từ nhiều năm qua, Amazon đã sử dụng robot để đóng gói và vận chuyển hàng trên quy mô lớn. Bên cạnh đó, CEO của Amazon là Jeff Bezos cũng luôn cho thấy mình là một người rất tôn trọng và thấu hiểu sức mạnh của robot...</p>
+          </div> </a> 
+          </li>
+           
+
+         </ul>
+             
+        </div>
+
+
+        <div class="sidebar col-md-4 col-12">
+            <div class="header-search">
+                <input type="text" class="input-search" placeholder="Tìm kiếm..."> <button id="button-search"><i style="padding-right: 0px" class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+            <br>
+            <div class="body-top ">
+                
+                <h4 >TIN NỔI BẬT</h4>
+                <div class="news-new scrollbar-inner">
+                      <ul>
+                    <li>&#187  <a href="http://vku.udn.vn/tin-tuc/dai-hoi-dai-bieu-doan-tncs-ho-chi-minh-lan-thu-i-nhiem-ky-2020-2022.innerHTML" target="_blank"> Đại hội Đại biểu Đoàn TNCS Hồ Chí Minh lần thứ I, nhiệm kỳ 2020 - 2022</a></li>
+                    <li>&#187  <a href="http://vku.udn.vn/tin-tuc/ngay-hoi-trai-nghiem-vku-2021-dinh-huong-tuong-lai.html" target="_blank"> NGÀY HỘI TRẢI NGHIỆM VKU 2021: ĐỊNH HƯỚNG TƯƠNG LAI</a></li>
+                    <li >&#187  <a href="http://vku.udn.vn/doan-thanh-nien/doan-thanh-nien/doan-truong-dh-cntt-tt-viet-han-tham-gia-hanh-trinh-di-tim-dia-chi-do-lan-i.html" target="_blank"> Đoàn Trường ĐH CNTT&TT Việt - Hàn tham gia hành trình Đi tìm địa chỉ đỏ lần I</a></li>
+                    <li>&#187  <a href="http://vku.udn.vn/tin-tuc/tong-ket-va-trao-giai-cuoc-thi-olympic-tin-hoc-danh-cho-hoc-sinh-thpt-khu-vuc-mien-trung-tay-nguyen-lan-thu-2.html" target="_blank">  Tổng kết và trao giải Cuộc thi Olympic Tin học dành cho học sinh THPT khu vực miền Trung - Tây Nguyên lần thứ 2</a></li>
+                    <li >&#187  <a href="#"> [KỶ NIỆM 46 NĂM NGÀY GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC (30/4/1975 - 30/4/2021)]</a></li>
+                    <p><a href="tintuchoatdong.html">Xem thêm...</a></p>
+           </ul>
+          </div>
+              </div>
+              <div class="body-content col-md">
+                <h3 style="height:30px; margin: 0 auto;line-height: 30px">SỰ KIỆN TRONG THÁNG 5</h3>
+                <br>
+                <div class="img-run"" style="height:480px; overflow:hidden">
+                <marquee  direction="left" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+                 <p>Không có sự kiện nào trong tháng 5/2021</p>
+                </marquee>
+              </div>
+              </div>
+               <div class="col-sm-12">
+             <img src="images/VKU1.gif" alt="N&eacute;t đẹp sinh vi&ecirc;n" style="width: 100%; height:250px; object-fit: cover;margin-top: 10px;" /> <div class="clr5"></div>       
+             </div>
+             <div class="body-end">
+            <h4 style="height:40px; margin: 0 auto;line-height: 40px;margin-bottom: 10px">ẢNH HOẠT ĐỘNG</h4>
+            
+                  <div class="col-md-12" class="img-run"" style="height:300px; overflow:hidden">
+                        <marquee style="height:300px"  direction="down" onmouseover="this.stop();" onmouseout="this.start();">
+                            <center>
+                                <br/>
+                                <a href="">
+                                  <img src="images/images-1.jpg" width="100%"><br>
+                                  <img src="images/images-2.jpg" width="100%"><br>
+                                  <img src="images/images-3.jpg" width="100%"><br>
+                                  <img src="images/images-4.jpg" width="100%"><br>
+                                  <img src="images/images-5.jpg" width="100%"><br>
+                                  <img src="images/images-7.jpg" width="100%"><br>
+                                  <img src="images/images-8.jpg" width="100%"><br>
+                                  <img src="images/images-9.jpg" width="100%"><br>
+                                  <img src="images/images-10.jpg" width="100%"><br>
+                                  <img src="images/images-11.jpg" width="100%"><br>
+                                  <img src="images/images-12.jpg" width="100%"><br>
+                               </a>
+                          </center>
+                    </marquee>
+        </div>
+                </div>
+          <div>
+            <div class="video col-12">
+          <h3 style="height:40px; margin: 0 auto;line-height: 40px;margin-bottom: 10px">VIDEO HOẠT ĐỘNG</h3>
+          <div class="video-youtube"><iframe width="100%" height="215" src="https://www.youtube.com/embed/RJdbV8vHZFo?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+         </div>
+         <br>
+         <div class="video-youtube"><iframe width="100%" height="215" src="https://www.youtube.com/embed/RJdbV8vHZFo?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+         </div>
+         </div>
+         <div class="element-detail ">
+                     <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 100%; height: 0px;"><div></div></div></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>        
+          <div class="element-detail ">
+                     <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 100%; height: 0px;"><div></div></div></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>        
+          <div class="fb-like-box fb_iframe_widget" style="margin-left: 15px;" data-href="https://www.facebook.com/congdoanvku" data-width="260px" data-height="250px" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=1062&amp;header=true&amp;height=250&amp;href=https://www.facebook.com/congdoanvku&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=false&amp;stream=false&amp;width=260px"><span style="vertical-align: bottom; width: 260px; height: 100px;"><iframe name="f10d3a8d79460d8" height="350px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2431dab6166ad%26domain%3Ddoantn.iuh.edu.vn%26origin%3Dhttp%253A%252F%252Fdoantn.iuh.edu.vn%252Ff2012afcda9d3f4%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=1062&amp;header=true&amp;height=250&amp;href=https://www.facebook.com/congdoanvku&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=false&amp;stream=false&amp;width=360px" style="border: none; visibility: visible; width: 320px;margin-right: 20px; height: 100px;" class=""></iframe></span></div> </div>
+          </div>
+      </div>
+      </div> 
+
+      </div>
+  
+      </div>
+
+      <div style="background-color: white;" class="container-fluid padding">
+        <div class="row text-center padding">
+          <div class="col-12">
+            <span class="text-black">Kết nối với chúng tôi:&nbsp;&nbsp;&nbsp;</span>
+          </div>
+          <div class="col-12 social padding">
+            <a href="https://www.facebook.com/congdoanvku" target="_blank"><i class="fab fa-facebook"width=""></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="http://daotao.vku.udn.vn/sv" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/watch?v=y7vd9Mm_Lkg&t=18s" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+<!--  -->
+</div>
+       <div class="sqs-block-content">
+       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+       <div class="elfsight-app-1445945c-2780-470e-a58e-dac0342a3b33"></div>
+     </div>
+
+       <div class="footer">
+            <div class="row text-center">
+       <div class="col-xl-12">
+        <p class="infor"><span style="font-size: 19px;color: red"> &copy;</span>Đoàn thanh niên Hồ Chí Minh - Trường Đại Học Công Nghệ Thông Tin Và Truyền Thông Việt-Hàn</p>
+        <span class="text-right">
+                            <i class="fas fa-map-marker-alt"></i> 470 Trần Đại Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng<br />
+                           <i class="fas fa-phone"></i><a style="color: white;" href="tel:0915368545">0915368545</a>    Fax:<a style="color: white;" href="tel:04-62631875">04-62631875</a> <br />
+                            <i class="fal fa-envelope"></i> <a style="color: white;" href="https://mail.google.com/mail/u/0/#inbox?compose=new">daotao@vku.udn.vn</a><br>
+                            <i class="fas fa-globe"></i> <a style="color: white;" href="http://doanthanhnienvku.epizy.com/">doanthanhnienvku.epizy.com</a>
+                        </span>
+          </div>
+       </div>
+       
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Lên trang đầu"><i class="fas fa-chevron-up"></i></button>
+<script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+ 
+    // Define a blank array for the effect positions. This will be populated based on width of the title.
+    var bArray = [];
+  
+    var sArray = [4,6,8,10];
+ 
+    for (var i = 0; i < $('.bubbles').width(); i++) {
+        bArray.push(i);
+    }
+     
+ 
+    function randomValue(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+ 
+ 
+    setInterval(function(){
+         
+      
+        var size = randomValue(sArray);
+   
+        $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+     
+        $('.individual-bubble').animate({
+            'bottom': '100%',
+            'opacity' : '-=0.7'
+        }, 3000, function(){
+            $(this).remove()
+        }
+        );
+ 
+ 
+    }, 350);
+ 
+});
+</script>
+</html>

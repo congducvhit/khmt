@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="./images/logodoan.png" rel="shortcut icon">
+    <meta name="description" content="Đoàn trường Đại học Công nghệ thông tin và truyền thông Việt Hàn,  doantn.vku.udn.vn">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/hoatdongdoi.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/grid.css">
+  <title>Hoạt động đội</title>
+
+</head>
+<body>
+   <div class="container">
+        
+
+      <div class="tab-content">
+            <a href="lienhe.html" style="color: #FFF;font-size: 12px"><i class="fa fa-address-book"
+          aria-hidden="true"></i> Liên hệ</a> <span style="color: #fff">|</span>
+            <a target="_blank" href="https://g.page/dai-hoc-viet-han?share" style="color: #FFF;font-size: 13px"><i class="fa fa-map"
+          aria-hidden="true"></i> Map</a> <span style="color: #fff">|</span>
+            <a href="login.html" style="color: #FFF;font-size: 12px"><i
+          class="fas fa-user-circle"></i></i> Đăng nhập</a>
+            <div id="MyClockDisplay" class="clock" style="font-size: 12px;"></div>
+          
+            <i class="fas fa-clock" style="float: right;font-size: 15px;padding-top: 2px;padding-right: 5px;color: #fff"></i>
+            <script type="text/javascript">
+                function showTime() {
+                    var date = new Date;
+                    var h = date.getHours();
+                    var m = date.getMinutes();
+                    var s = date.getSeconds();
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                    s = (s < 10) ? "0" + s : s;
+                    var time = h + ":" + m + ":" + s;
+                    document.getElementById("MyClockDisplay").innerText = time;
+                    document.getElementById("MyClockDisplay").textContent = time;
+                    setTimeout(showTime, 1000);
+                }
+                showTime();
+            </script>
+        </div>
+        <div class="header-search-2">
+            <input type="text" class="input-search" id="input-search-2" placeholder="Tìm kiếm..."> <button id="button-search" class="btn-search-2"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+       <div class="header">
+       <!-- header --> 
+          <header>
+        <img src="images/logovku1.png" alt="" style="max-width: 600px;width: 100%; height: auto; align-items: center;">
+        <div class="header-introduction d-flex justify-content-around" style="flex-wrap: nowrap;">
+           <img src="images/tn_vn.svg" class="col-md-4 col-2 p-1" alt="" style="width:140px; height: 90px;margin-left: 20px;">
+           <div class="header-title col-md-8 col-9 p-1">
+             <p class="title1">Đoàn Thanh Niên Cộng Sản Hồ Chí Minh</p>
+             <p class="title2">Trường ĐH Công nghệ thông tin Và truyền thông Việt Hàn</p>
+           </div>
+           <img src="images/logo_doan.svg"  class="col-md-2 col-2 p-1" alt="" style="width:180px; height: 120px;margin-top: -18px;margin-right: 20px;" >
+        </div>
+      </header>
+        
+      </div>
+    
+      <div class="body">
+        <div class="menu">
+        <nav class="navbar navbar-expand-xl navbar-dark pt-1 pb-1 nav-header">
+           <a class="navbar-brand" href="index.html"><img style="color: black;" src="./images/homew.png" height="25"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a  style="color: #fff" class="nav-link" href="index.html">Trang chủ</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Giới thiệu
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="gioithieuchung.html">Giới thiệu chung</a>
+        <a class="dropdown-item" href="gioithieudoan.html">Giới thiệu đoàn trường</a>
+        <a class="dropdown-item" href="anhhoatdong.html">Ảnh hoạt động</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a  style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Tin tức
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="tintuchoatdong.html">Tin tức hoạt động</a>
+        <a class="dropdown-item" href="kehoach.html">Kế hoạch</a>
+        <a class="dropdown-item" href="thongbao.html">Thông báo</a>
+        <a class="dropdown-item" href="tailieu.html">Tài liệu</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a  style="color: #fff" class="nav-link" href="nghiencuukhoahoc.html">Nghiên cứu khoa học</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a  style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Hỗ trợ sinh viên
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="hocbong.html">Học bổng</a>
+        <a class="dropdown-item" href="gioithieuvieclam.html">Giới thiệu việc làm</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a  style="color: #fff" class="nav-link" href="lienhe.html">Liên hệ</a>
+    </li>
+    
+  </ul>
+</nav>
+<br>
+
+      
+        <div class="maincontent col-md-8 col-12">
+         <div class="col-xl-12">
+          <div class="title-top bubbles">
+           <span class="card-title"><h5><i class="fa fa-caret-right"></i> Sinh viên Việt Nam chuẩn bị hành trang hội nhập quốc tế</h5></span></div> 
+           
+           <hr>
+           <p style="text-align:justify;">
+           
+            <p style="font-size: 12px;font-style: italic;">Chiều ngày 10/12/2018, tại Đại học Quốc gia Hà Nội, 110 đại biểu thanh niên sinh viên ưu tú trong và ngoài nước đã góp mặt tại Trung tâm thảo luận số 5 để tham gia thảo luận với chủ đề: “Hành trang hội nhập quốc tế của sinh viên Việt Nam”.
+           </p>
+           <p style="text-align:justify;">
+          
+            <p>Các đồng chí: Đào Chí Nghĩa, Ủy viên Ban thư ký Trung ương Hội sinh viên Việt Nam, Chủ tịch Hội Sinh viên Việt Nam thành phố Cần Thơ; Cao Lê Tùng Nghĩa, Ủy viên BCH Trung ương Hội Sinh viên Việt Nam; Chủ tịch Hội Sinh viên Việt Nam tỉnh Quảng Ngãi; Lê Thanh Hà, Ủy viên Ban thư ký Trung ương Hội Sinh viên Việt Nam, Phó tổng Biên tập Báo Sinh viên Việt Nam đã đồng chủ trì diễn đàn.&nbsp;
+           </p>
+           <p style="text-align:justify;">
+            <span class="Apple-tab-span" style="white-space: pre;"> </span>
+           Theo báo cáo đề dẫn, Hội nhập quốc tế đã, đang là một xu thế lớn của thế giới hiện đại, tác động sâu sắc đến quan hệ quốc tế và đời sống của từng quốc gia. Quá trình hội nhập tạo ra nhiều cơ hội cho sinh viên trong việc tiếp cận thông tin, tiếp thu những thành tựu khoa học công nghệ, kỹ thuật và quản lý hiện đại trên thế giới. &nbsp;
+           </p>
+           <p style="text-align:justify;">
+            <span class="Apple-tab-span" style="white-space: pre;"> </span>
+           Trong những năm qua, các cấp bộ Hội đã chú trọng tổ chức các hoạt động tạo môi trường giúp sinh viên rèn luyện kỹ năng, trang bị kiến thức nhằm nâng cao khả năng hội nhập quốc tế. Các hoạt động hỗ trợ nâng cao nhận thức về hội nhập, giúp sinh viên rèn luyện kỹ năng, chủ động hội nhập quốc tế được các cấp bộ Hội triển khai theo nhiều hình thức như: Hội thi Olympic tiếng Anh sinh viên toàn quốc; Liên hoan các câu lạc bộ, đội, nhóm tiếng Anh toàn quốc; Chương trình giao lưu “Gặp gỡ Việt Nam”; Chương trình Kỹ năng quản lý tài chính cá nhân..Bên cạnh đó, các hoạt động giao lưu quốc tế giữa sinh viên Việt Nam với sinh viên nước ngoài được Hội Sinh viên các cấp quan tâm thực hiện, góp phần giới thiệu, quảng bá về văn hoá, con người Việt Nam.Các hoạt động trang bị, huấn luyện kỹ năng thực hành xã hội, các kỹ năng đáp ứng yêu cầu của thị trường lao động... cho sinh viên được nhiều cơ sở Hội chú trọng, bước đầu triển khai có hiệu quả thông qua việc bồi dưỡng các kỹ năng cần thiết trong quá trình học tập và làm việc sau khi tốt nghiệp.
+           </p>
+           <p style="text-align:justify;">
+            <span class="Apple-tab-span" style="white-space: pre;"> </span>
+          Tuy nhiên, việc tổ chức các hoạt động tạo môi trường cho sinh viên rèn luyện các kỹ năng, để hội nhập của Hội Sinh viên chưa thực sự toàn diện, chưa đầu tư đúng mức và đồng đều. Các hoạt động tạo môi trường để sinh viên học tập, rèn luyện kỹ năng thực hành tiếng Anh được nhiều đơn vị tổ chức nhưng sức thu hút chưa cao, chỉ dừng lại ở nhóm sinh viên có khả năng tiếng Anh tốt.
+           </p>
+           <p style="text-align:justify;">
+            <span class="Apple-tab-span" style="white-space: pre;"> </span>
+           Tại diễn đàn, các đại biểu đã tập trung để trao đổi, thảo luận, chia sẻ các mô hình  sôi nổi các nội dung như: nâng cao bản lĩnh, trang bị kiến thức, kỹ năng cho sinh viên để hội nhập tốt; đẩy mạnh phong trào học tập ngoại ngữ, đặc biệt là tiếng Anh trong sinh viên; tăng cường hoạt động giao lưu, đối ngoại thanh niên. Bên cạnh đó, các đại biểu cũng đề xuất kết nối, phối hợp giữa Hội Sinh viên các tỉnh, trường trong nước với các Hội Sinh viên Việt Nam ở nước ngoài.
+           </p>
+
+           <p style="text-align:justify;text-align: center;">
+           <img class="col-11" src="images/hdd.jpg">
+           </p>
+           <p style="text-align:justify;">
+            <span class="Apple-tab-span" style="white-space: pre;"> </span>
+            Đại biểu Đặng Huyền Thư - Chủ tịch Hội Sinh viên Đại học Ngoại ngữ, Đại học Quốc gia gia Hà Nội chia sẻ về mô hình cộng đồng ngoại ngữ của Đại học Ngoại ngữ, nhằm lan tỏa hình thức hội nhập hiệu quả. Đây cũng là mô hình được Hội Sinh viên TP. Hà Nội công nhận là mô hình tiêu biểu trong 02 năm liền.
+           </p>
+           <p style="text-align:justify;">
+            <span class="Apple-tab-span" style="white-space: pre;"> </span>
+           Theo đó, mô hình được hoạt động theo hình thức lớp học miễn phí, tại lớp học này chính sinh viên lại là giáo viên của các bạn sinh viên và xây dựng cộng đồng hỗ trợ cùng nhau phát triển. Trong sinh viên nhà trường không chỉ cùng nhau phát triển ngôn ngữ mà thông qua đó đã trang bị cho các bạn sinh viên các kiến thức mềm về các quốc gia trên thế giới và quan trọng hơn nữa là bồi dưỡng cho các bạn những kỹ năng hội nhập cần thiết để các bạn sinh viên có thể sẵn sàng để hội nhập với thế giới; đồng thời mô hình cộng đồng ngoại ngữ này có thể giúp mỗi bạn sinh viên phấn đấu để rèn luyện trở thành Sinh viên 5 tốt, tạo môi trường để cho các bạn sinh viên rèn luyện kỹ năng nghiệp vụ sư phạm và tích lũy kiến thức học học lẫn nhau .
+           </p>
+         </div>
+             
+        </div>
+
+
+        <div class="sidebar col-md-4 col-12">
+            <div class="header-search">
+                <input type="text" class="input-search" placeholder="Tìm kiếm..."> <button id="button-search"><i style="padding-right: 0px" class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+            <br>
+            <div class="body-top ">
+                
+                <h4 >TIN NỔI BẬT</h4>
+                <div class="news-new scrollbar-inner">
+                      <ul>
+                    <li>&#187  <a href="http://vku.udn.vn/tin-tuc/dai-hoi-dai-bieu-doan-tncs-ho-chi-minh-lan-thu-i-nhiem-ky-2020-2022.innerHTML" target="_blank"> Đại hội Đại biểu Đoàn TNCS Hồ Chí Minh lần thứ I, nhiệm kỳ 2020 - 2022</a></li>
+                    <li>&#187  <a href="http://vku.udn.vn/tin-tuc/ngay-hoi-trai-nghiem-vku-2021-dinh-huong-tuong-lai.html" target="_blank"> NGÀY HỘI TRẢI NGHIỆM VKU 2021: ĐỊNH HƯỚNG TƯƠNG LAI</a></li>
+                    <li >&#187  <a href="http://vku.udn.vn/doan-thanh-nien/doan-thanh-nien/doan-truong-dh-cntt-tt-viet-han-tham-gia-hanh-trinh-di-tim-dia-chi-do-lan-i.html" target="_blank"> Đoàn Trường ĐH CNTT&TT Việt - Hàn tham gia hành trình Đi tìm địa chỉ đỏ lần I</a></li>
+                    <li>&#187  <a href="http://vku.udn.vn/tin-tuc/tong-ket-va-trao-giai-cuoc-thi-olympic-tin-hoc-danh-cho-hoc-sinh-thpt-khu-vuc-mien-trung-tay-nguyen-lan-thu-2.html" target="_blank">  Tổng kết và trao giải Cuộc thi Olympic Tin học dành cho học sinh THPT khu vực miền Trung - Tây Nguyên lần thứ 2</a></li>
+                    <li >&#187  <a href="#"> [KỶ NIỆM 46 NĂM NGÀY GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC (30/4/1975 - 30/4/2021)]</a></li>
+                    <p><a href="tintuchoatdong.html">Xem thêm...</a></p>
+           </ul>
+          </div>
+              </div>
+              <div class="body-content col-md">
+                <h3 style="height:30px; margin: 0 auto;line-height: 30px">SỰ KIỆN TRONG THÁNG 5</h3>
+                <br>
+                <div class="img-run"" style="height:480px; overflow:hidden">
+                <marquee  direction="left" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+                 <p>Không có sự kiện nào trong tháng 5/2021</p>
+                </marquee>
+              </div>
+              </div>
+               <div class="col-sm-12">
+             <img src="images/VKU1.gif" alt="N&eacute;t đẹp sinh vi&ecirc;n" style="width: 100%; height:250px; object-fit: cover;margin-top: 10px;" /> <div class="clr5"></div>       
+             </div>
+             <div class="body-end">
+            <h4 style="height:40px; margin: 0 auto;line-height: 40px;margin-bottom: 10px">ẢNH HOẠT ĐỘNG</h4>
+            
+                  <div class="col-md-12" class="img-run"" style="height:300px; overflow:hidden">
+                        <marquee style="height:300px"  direction="down" onmouseover="this.stop();" onmouseout="this.start();">
+                            <center>
+                                <br/>
+                                <a href="">
+                                  <img src="images/images-1.jpg" width="100%"><br>
+                                  <img src="images/images-2.jpg" width="100%"><br>
+                                  <img src="images/images-3.jpg" width="100%"><br>
+                                  <img src="images/images-4.jpg" width="100%"><br>
+                                  <img src="images/images-5.jpg" width="100%"><br>
+                                  <img src="images/images-7.jpg" width="100%"><br>
+                                  <img src="images/images-8.jpg" width="100%"><br>
+                                  <img src="images/images-9.jpg" width="100%"><br>
+                                  <img src="images/images-10.jpg" width="100%"><br>
+                                  <img src="images/images-11.jpg" width="100%"><br>
+                                  <img src="images/images-12.jpg" width="100%"><br>
+                               </a>
+                          </center>
+                    </marquee>
+        </div>
+                </div>
+          <div>
+            <div class="video col-12">
+          <h3 style="height:40px; margin: 0 auto;line-height: 40px;margin-bottom: 10px">VIDEO HOẠT ĐỘNG</h3>
+          <div class="video-youtube"><iframe width="100%" height="215" src="https://www.youtube.com/embed/RJdbV8vHZFo?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+         </div>
+         <br>
+         <div class="video-youtube"><iframe width="100%" height="215" src="https://www.youtube.com/embed/RJdbV8vHZFo?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+         </div>
+         </div>
+         <div class="element-detail ">
+                     <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 100%; height: 0px;"><div></div></div></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>        
+          <div class="fb-like-box fb_iframe_widget" style="margin-left: 15px;" data-href="https://www.facebook.com/congdoanvku" data-width="260px" data-height="250px" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=1062&amp;header=true&amp;height=250&amp;href=https://www.facebook.com/congdoanvku&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=false&amp;stream=false&amp;width=260px"><span style="vertical-align: bottom; width: 260px; height: 100px;"><iframe name="f10d3a8d79460d8" height="350px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2431dab6166ad%26domain%3Ddoantn.iuh.edu.vn%26origin%3Dhttp%253A%252F%252Fdoantn.iuh.edu.vn%252Ff2012afcda9d3f4%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=1062&amp;header=true&amp;height=250&amp;href=https://www.facebook.com/congdoanvku&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=false&amp;stream=false&amp;width=360px" style="border: none; visibility: visible; width: 320px;margin-right: 20px; height: 100px;" class=""></iframe></span></div>
+          </div>
+      </div>
+      </div> 
+
+      </div>
+  
+      </div>
+
+      <div style="background-color: white;" class="container-fluid padding">
+        <div class="row text-center padding">
+          <div class="col-12">
+            <span class="text-black">Kết nối với chúng tôi:&nbsp;&nbsp;&nbsp;</span>
+          </div>
+          <div class="col-12 social padding">
+            <a href="https://www.facebook.com/congdoanvku" target="_blank"><i class="fab fa-facebook"width=""></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="http://daotao.vku.udn.vn/sv" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/watch?v=y7vd9Mm_Lkg&t=18s" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+<!--  -->
+</div>
+       <div class="footer">
+            <div class="row text-center">
+       <div class="col-xl-12">
+        <p class="infor"><span style="font-size: 19px;color: red"> &copy;</span>Đoàn thanh niên Hồ Chí Minh - Trường Đại Học Công Nghệ Thông Tin Và Truyền Thông Việt-Hàn</p>
+        <span class="text-right">
+                            <i class="fas fa-map-marker-alt"></i> 470 Trần Đại Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng<br />
+                           <i class="fas fa-phone"></i><a style="color: white;" href="tel:0915368545">0915368545</a>    Fax:<a style="color: white;" href="tel:04-62631875">04-62631875</a> <br />
+                            <i class="fal fa-envelope"></i> <a style="color: white;" href="https://mail.google.com/mail/u/0/#inbox?compose=new">daotao@vku.udn.vn</a><br>
+                            <i class="fas fa-globe"></i> doan.vku.udn.vn
+                        </span>
+          </div>
+       </div>
+       
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Lên trang đầu"><i class="fas fa-chevron-up"></i></button>
+<script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+ 
+    // Define a blank array for the effect positions. This will be populated based on width of the title.
+    var bArray = [];
+  
+    var sArray = [4,6,8,10];
+ 
+    for (var i = 0; i < $('.bubbles').width(); i++) {
+        bArray.push(i);
+    }
+     
+ 
+    function randomValue(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+ 
+ 
+    setInterval(function(){
+         
+      
+        var size = randomValue(sArray);
+   
+        $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+     
+        $('.individual-bubble').animate({
+            'bottom': '100%',
+            'opacity' : '-=0.7'
+        }, 3000, function(){
+            $(this).remove()
+        }
+        );
+ 
+ 
+    }, 350);
+ 
+});
+</script>
+</html>

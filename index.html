@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="./images/logodoan.png" rel="shortcut icon">
+    <meta name="description" content="Đoàn trường Đại học Công nghệ thông tin và truyền thông Việt Hàn,  doantn.vku.udn.vn">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/grid.css">
+  <title>Trang chủ</title>
+
+</head>
+<body>
+	 <div class="container">
+    	<div class="tab-content">
+            <a href="lienhe.html" style="color: #FFF;font-size: 12px"><i class="fa fa-address-book"
+          aria-hidden="true"></i> Liên hệ</a> <span style="color: #fff">|</span>
+            <a target="_blank" href="https://g.page/dai-hoc-viet-han?share" style="color: #FFF;font-size: 13px"><i class="fa fa-map"
+          aria-hidden="true"></i> Map</a> <span style="color: #fff">|</span>
+            <a href="login.html" style="color: #FFF;font-size: 12px"><i
+          class="fas fa-user-circle"></i></i> Đăng nhập</a>
+            <div id="MyClockDisplay" class="clock" style="font-size: 12px;"></div>
+          
+            <i class="fas fa-clock" style="float: right;font-size: 15px;padding-top: 2px;padding-right: 5px;color: #fff"></i>
+            <script type="text/javascript">
+                function showTime() {
+                    var date = new Date;
+                    var h = date.getHours();
+                    var m = date.getMinutes();
+                    var s = date.getSeconds();
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                    s = (s < 10) ? "0" + s : s;
+                    var time = h + ":" + m + ":" + s;
+                    document.getElementById("MyClockDisplay").innerText = time;
+                    document.getElementById("MyClockDisplay").textContent = time;
+                    setTimeout(showTime, 1000);
+                }
+                showTime();
+            </script>
+        </div>
+        <div class="header-search-2">
+            <input type="text" class="input-search" id="input-search-2" placeholder="Tìm kiếm..."> <button id="button-search" class="btn-search-2"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    	 <div class="header">
+       <!-- header --> 
+          <header>
+        <img src="images/logovku1.png" alt="" style="max-width: 600px;width: 100%; height: auto; align-items: center;">
+        <div class="header-introduction d-flex justify-content-around" style="flex-wrap: nowrap;">
+           <img src="images/tn_vn.svg" class="col-md-4 col-2 p-1" alt="" style="width:140px; height: 90px;margin-left: 20px;">
+           <div class="header-title col-md-8 col-9 p-1">
+             <p class="title1">Đoàn Thanh Niên Cộng Sản Hồ Chí Minh</p>
+             <p class="title2">Trường ĐH Công nghệ thông tin Và truyền thông Việt Hàn</p>
+           </div>
+           <img src="images/logo_doan.svg"  class="col-md-2 col-2 p-1" alt="" style="width:180px; height: 120px;margin-top: -18px;margin-right: 20px;" >
+        </div>
+      </header>
+        
+      </div>
+     
+   <!-- body -->
+      <div class="body">
+        <div class="menu">
+        <nav  class="navbar navbar-expand-xl navbar-dark pt-1 pb-1 nav-header" >
+           <a class="navbar-brand" href="index.html"><img style="color: black;" src="./images/homew.png" height="25"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a  style="color: #fff" class="nav-link" href="index.html">Trang chủ</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Giới thiệu
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="gioithieuchung.html">Giới thiệu chung</a>
+        <a class="dropdown-item" href="gioithieudoan.html">Giới thiệu đoàn trường</a>
+        <a class="dropdown-item" href="anhhoatdong.html">Ảnh hoạt động</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a  style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Tin tức
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="tintuchoatdong.html">Tin tức hoạt động</a>
+        <a class="dropdown-item" href="kehoach.html">Kế hoạch</a>
+        <a class="dropdown-item" href="thongbao.html">Thông báo</a>
+        <a class="dropdown-item" href="tailieu.html">Tài liệu</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a  style="color: #fff" class="nav-link" href="nghiencuukhoahoc.html">Nghiên cứu khoa học</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a  style="color: #fff" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Hỗ trợ sinh viên
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="hocbong.html">Học bổng</a>
+        <a class="dropdown-item" href="gioithieuvieclam.html">Giới thiệu việc làm</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a  style="color: #fff" class="nav-link" href="lienhe.html">Liên hệ</a>
+    </li>
+  
+  </ul>
+</nav>
+<br>
+
+      
+        <div class="maincontent col-md-8 col-12">
+         <!-- slide img -->
+          <div class="slide-image col-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                 <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+            <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid" style="height: 280px;" src="./images/ckrobocar.png" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text">
+          
+        </div>  
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" style="height: 280px;" src="./images/dtn2.png" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text">
+           
+        </div>  
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" style="height: 280px;" src="./images/talent.png" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text">
+           
+        </div>  
+    </div>
+  </div>
+  <div class="carousel-item">
+      <img class="d-block img-fluid" style="height: 280px;" src="./images/dtn.png" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text">
+           
+        </div>  
+    </div>
+  </div>
+
+
+            </div>     
+        
+    </div>
+                    
+          </div><br>
+          <!-- end -->
+<!--  -->
+          <div class="box-menu">
+            <div class="row padding">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <a style="text-decoration: none;" class="card-title" href="tintuchoatdong.html">Tin tức-Sự kiện</a><a class="btn btn-iuh" href="tintuchoatdong.html"><i class="fa fa-angle-double-right"></i>Xem thêm </a>
+                  </div>
+                  <div class="card-body">
+                   <a style="text-decoration: none;" href="#"> <img style="float: left;padding-right: 20px;" src="images/tintuc-1.jpg">
+                  <p > Vậy là sau bao ngày nỗ lực, cố gắng và chờ mong, chuyến đi của nhóm từ thiện HAND IN HAND VIỆT - HÀN..</p></a>
+                  </div>
+                  <div class="card-body">
+                   <a style="text-decoration: none;" href="#"> <img style="float: left;padding-right: 20px;" src="images/tintuc-2.jpg" width="110" height="110">
+                  <p style=""> Đoàn Trường ĐH CNTT&TT Việt - Hàn tham gia hành trình Đi tìm địa chỉ đỏ lần I...</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <a style="text-decoration: none;" class="card-title" href="thongbao.html">Thông báo</a><a class="btn btn-iuh" href="thongbao.html"><i class="fa fa-angle-double-right"></i>Xem thêm </a>
+                  </div>
+                  <div class="card-body">
+                   <a style="text-decoration: none;" href="http://vku.udn.vn/tin-tuc-hoat-dong/tin-tuc-hoat-dong/dai-hoi-dai-bieu-doan-tncs-ho-chi-minh-lan-thu-i-nhiem-ky-2020-2022.html" target="_blank"> <img style="float: left;padding-right: 20px;" src="images/thongbao-1.jpg" width="110" height="110">
+                  <p style="padding-top: 10px;"> Đại hội Đại biểu Đoàn TNCS Hồ Chí Minh lần thứ I, nhiệm kỳ 2020 - 2022...</p></a>
+                  </div>
+                  <div class="card-body">
+                   <a style="text-decoration: none;" href="http://tuyensinh.vku.udn.vn/tin-tuc-va-hoat-dong/doan-thanh-nien/thong-bao-tuyen-tinh-nguyen-vien-cac-chot-vao-tp-da-nang-thang-32020.html" target="_blank"> <img style="float: left;padding-right: 20px;" src="images/thongbao.png" width="110" height="110">
+                  <p style="padding-top: 10px;"> Thông báo tuyển tình nguyện viên các chốt vào TP Đà Nẵng tháng 3/2020...</p></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div><br>
+<!--  -->
+          <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <a style="text-decoration: none;" class="card-title" href="hocbong.html">Hỗ trợ sinh viên</a>
+                  </div>
+                  <div class="card-body-left">
+                   <a style="text-decoration: none;" target="_blank" href="http://vku.udn.vn/thong-bao//thong-bao-ve-viec-nop-ho-so-xet-hoc-bong-hessen-nam-hoc-2020-2021.html"> <img style="float: left;padding-right: 20px;" src="images/hoc-bong.png" width="300px" height="250px">
+                  <p style="padding-top: 10px;font-size: 16px;color: #000;font-weight: bold;"> Thông báo về việc nộp hồ sơ xét học bổng Hessen năm học 2020-2021...</p></a>
+                  <p style="padding-top: 10px;font-size: 15px;color: #000;font-style: italic;">Phòng Công tác sinh viên thông báo về việc nộp hồ sơ xét học bổng Hessen, sinh viên xem nội dung chi tiết tại link và  lưu ý các nội dung như sau:
+                    1. Đối tượng và tiêu chí xét chọn
+                    Yêu cầu sinh viên đáp ứng các tiêu chí sau đây:...</p><a class="btn btn-iuh"  href="http://vku.udn.vn/thong-bao//thong-bao-ve-viec-nop-ho-so-xet-hoc-bong-hessen-nam-hoc-2020-2021.html" target="_blank"><i class="fa fa-angle-double-right"></i>Xem thêm </a>
+                  </div>
+                  <!--  <a href="http://localhost/doanthanhnienvku/login/index.php">login</a> -->
+                </div>
+              </div>
+              <br><hr>
+
+ <!-- end box-menu-->
+          <div class="box-table"> 
+          <div class="srcoll-bar">
+          <div class="l-c-element1 col-sm-6 img-lighter c-element-1">
+                    <p style="text-align: center;font-size: 18px;font-family:Arial">Xếp hạng các đơn vị năm <span id="Year"></span> </p>
+                   <div class="scrollbar-inner">
+
+                       <ul style="margin: auto; padding: 0px; max-height: 220px;">
+                           <table border="1" style="border-collapse: collapse" class="rank">
+                               <tr>
+                                   <th width="150">Đơn vị</th>
+                                   <th>Số điểm</th>
+                                   <th>Xếp hạng</th>
+                               </tr>
+                           <tr>
+                            <td>Đo&agrave;n Khoa Công nghệ thông tin
+                            </td>
+                            <td align="center">934</td><td align="center">1
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                            Đo&agrave;n Khoa Quản trị kinh doanh
+                          </td><td align="center">929
+                          </td>
+                          <td align="center">2
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Đo&agrave;n Khoa Công nghệ kỹ thuật máy tính</td><td align="center">890</td><td align="center">3
+                          </td>
+                        </tr>
+                        <script>document.getElementById("Year").innerHTML="2021"</script>
+                       </table>
+                       </ul>
+                   </div>
+                </div>
+                </div>
+          <div class="l-c-element2 col-sm-6 c-element-2">
+                    <div class="i-l-title">
+                        <h3>Văn bản biểu mẫu</h3>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="page-list-col col-md-12 scrollbar-inner">
+                            <table>
+                            <tr>
+                              <td style="padding: 3px 0px;"> <i class="fa fa-caret-right"></i> Mẫu Kế hoạch cấp cơ sở Đoàn
+                              </td>
+                              <td><a title="Download" href="./bieumau/baocaodoancs1.rar" target="_blank"><img src="./images/download.png" width="25"></a>
+                              </td>
+                            </tr>
+                            <tr>
+
+                              <td style="padding: 3px 0px;"> <i class="fa fa-caret-right"></i> Mẫu Kế hoạch cấp trường (dành cho các Ban năm 2020)
+                              </td>
+                              <td><a title="Download" href="./bieumau/baocaodoancs1.rar" target="_blank"><img src="./images/download.png" width="25"></a>
+                              </td>
+                            </tr><tr>
+                              <td style="padding: 3px 0px;"> <i class="fa fa-caret-right"></i> Mẫu Kế hoạch Li&ecirc;n tịch cấp trường
+                              </td>
+                              <td><a title="Download" href="./bieumau/baocaodoancs1.rar" target="_blank"><img src="./images/download.png" width="25"></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 3px 0px;"> <i class="fa fa-caret-right"></i> MẪU_GIẤY ĐỀ NGHỊ 
+                              </td>
+                              <td><a title="Download" href="./bieumau/baocaodoancs1.rar" target="_blank"><img src="./images/download.png" width="25"></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 3px 0px;"> <i class="fa fa-caret-right"></i> Công trình thanh niên cấp chi Đoàn
+                              </td>
+                              <td><a title="Download" href="./bieumau/baocaodoancs1.rar" target="_blank"><img src="./images/download.png" width="25"></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 3px 0px;"> <i class="fa fa-caret-right"></i> Công trình Thanh niên cấp Khoa - Viện
+                              </td>
+                              <td><a title="Download" href="./bieumau/baocaodoancs1.rar" target="_blank"><img src="./images/download.png" width="25"></a>
+                              </td>
+                            </tr>            
+                           </table>
+                           <a href="#" class="btn-expand">
+                            <span>Xem tất cả</span>
+                        </a>
+                        </div></div>
+                </div>
+              </div>
+<!-- end box-table -->
+              <div class="row box-padding ">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title"><a href="gioithieudoan.html">Hoạt động đoàn</a></h4>
+                    </div>
+                    <img src="./images/hoatdongdoan.jpg">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href=""><h4 class="card-title"><a href="hoatdonghoi.html">Hoạt động hội</a></h4></a>
+                    </div>
+                    <img src="./images/hoatdonghoi.jpg">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                     <a href=""><h4 class="card-title"><a href="htvaltloibac.html">Ht và Lt lời bác</a></h4></a> 
+                    </div>
+                    <img src="./images/hoctapvalamtheotgddHCM.jpg">
+                  </div>
+                </div>
+              </div>
+  <!--  -->
+              <hr class="my-4">
+      
+
+<!--  -->
+
+        </div>
+
+
+        <div class="sidebar col-md-4 col-12">
+                   <div class="header-search">
+                <input type="text" class="input-search" placeholder="Tìm kiếm..."> <button id="button-search"><i style="padding-right: 0px" class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+            <br>
+            <div class="body-top ">
+                
+                <h4 >TIN NỔI BẬT</h4>
+                <div class="news-new scrollbar-inner">
+                      <ul>
+                    <li>&#187  <a href="http://vku.udn.vn/tin-tuc/dai-hoi-dai-bieu-doan-tncs-ho-chi-minh-lan-thu-i-nhiem-ky-2020-2022.innerHTML" target="_blank"> Đại hội Đại biểu Đoàn TNCS Hồ Chí Minh lần thứ I, nhiệm kỳ 2020 - 2022</a></li>
+                    <li>&#187  <a href="http://vku.udn.vn/tin-tuc/ngay-hoi-trai-nghiem-vku-2021-dinh-huong-tuong-lai.html" target="_blank"> NGÀY HỘI TRẢI NGHIỆM VKU 2021: ĐỊNH HƯỚNG TƯƠNG LAI</a></li>
+                    <li >&#187  <a href="http://vku.udn.vn/doan-thanh-nien/doan-thanh-nien/doan-truong-dh-cntt-tt-viet-han-tham-gia-hanh-trinh-di-tim-dia-chi-do-lan-i.html" target="_blank"> Đoàn Trường ĐH CNTT&TT Việt - Hàn tham gia hành trình Đi tìm địa chỉ đỏ lần I</a></li>
+                    <li>&#187  <a href="http://vku.udn.vn/tin-tuc/tong-ket-va-trao-giai-cuoc-thi-olympic-tin-hoc-danh-cho-hoc-sinh-thpt-khu-vuc-mien-trung-tay-nguyen-lan-thu-2.html" target="_blank">  Tổng kết và trao giải Cuộc thi Olympic Tin học dành cho học sinh THPT khu vực miền Trung - Tây Nguyên lần thứ 2</a></li>
+                    <li >&#187  <a href="#"> [KỶ NIỆM 46 NĂM NGÀY GIẢI PHÓNG MIỀN NAM, THỐNG NHẤT ĐẤT NƯỚC (30/4/1975 - 30/4/2021)]</a></li>
+                    <p><a href="tintuchoatdong.html">Xem thêm...</a></p>
+           </ul>
+          </div>
+              </div>
+              <div class="body-content col-md">
+                <h3 style="height:30px; margin: 0 auto;line-height: 30px">SỰ KIỆN TRONG THÁNG 5</h3>
+                <br>
+                <div class="img-run"" style="height:480px; overflow:hidden">
+                <marquee  direction="left" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+                 <p>Không có sự kiện nào trong tháng 5/2021</p>
+                </marquee>
+              </div>
+              </div>
+               <div class="col-sm-12">
+             <img src="images/VKU1.gif" alt="N&eacute;t đẹp sinh vi&ecirc;n" style="width: 100%; height:250px; object-fit: cover;margin-top: 10px;" /> <div class="clr5"></div>       
+             </div>
+             <div class="body-end">
+            <h4 style="height:40px; margin: 0 auto;line-height: 40px;margin-bottom: 10px">ẢNH HOẠT ĐỘNG</h4>
+            
+                  <div class="col-md-12" class="img-run"" style="height:300px; overflow:hidden">
+                        <marquee style="height:300px"  direction="down" onmouseover="this.stop();" onmouseout="this.start();">
+                            <center>
+                                <br/>
+                                <a href="">
+                                  <img src="images/images-1.jpg" width="100%"><br>
+                                  <img src="images/images-2.jpg" width="100%"><br>
+                                  <img src="images/images-3.jpg" width="100%"><br>
+                                  <img src="images/images-4.jpg" width="100%"><br>
+                                  <img src="images/images-5.jpg" width="100%"><br>
+                                  <img src="images/images-7.jpg" width="100%"><br>
+                                  <img src="images/images-8.jpg" width="100%"><br>
+                                  <img src="images/images-9.jpg" width="100%"><br>
+                                  <img src="images/images-10.jpg" width="100%"><br>
+                                  <img src="images/images-11.jpg" width="100%"><br>
+                                  <img src="images/images-12.jpg" width="100%"><br>
+                               </a>
+                          </center>
+                    </marquee>
+        </div>
+                </div>
+          <div>
+            <div class="video col-12">
+          <h3 style="height:40px; margin: 0 auto;line-height: 40px;margin-bottom: 10px">VIDEO HOẠT ĐỘNG</h3>
+          <div class="video-youtube"><iframe width="100%" height="215" src="https://www.youtube.com/embed/RJdbV8vHZFo?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+         </div>
+         <br>
+         <div class="video-youtube"><iframe width="100%" height="215" src="https://www.youtube.com/embed/RJdbV8vHZFo?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+         </div>
+         </div>
+         <div class="element-detail ">
+                     <div id="fb-root" class=" fb_reset "><div style="position: absolute; top: -10000px; width: 100%; height: 0px;"><div></div></div></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>        
+        	<div class="fb-like-box fb_iframe_widget " style="margin-left: 15px;" data-href="https://www.facebook.com/congdoanvku" data-width="260px" data-height="250px" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=1062&amp;header=true&amp;height=250&amp;href=https://www.facebook.com/congdoanvku&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=false&amp;stream=false&amp;width=260px"><span style="vertical-align: bottom; width: 260px; height: 100px;"><iframe name="f10d3a8d79460d8" height="350px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2431dab6166ad%26domain%3Ddoantn.iuh.edu.vn%26origin%3Dhttp%253A%252F%252Fdoantn.iuh.edu.vn%252Ff2012afcda9d3f4%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=1062&amp;header=true&amp;height=250&amp;href=https://www.facebook.com/congdoanvku&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=false&amp;stream=false&amp;width=360px" style="border: none; visibility: visible; width: 320px;margin-right: 20px; height: 100px;" class=""></iframe></span></div> </div>
+          </div>
+      </div>
+      </div> 
+
+      </div>
+  <div class="container-fluid padding" style="background-color: #fff">
+        <div class="row text-center padding">
+          <div class="col-12">
+            <span class="text-black">Kết nối với chúng tôi:&nbsp;&nbsp;&nbsp;</span>
+          </div>
+          <div class="col-12 social padding">
+            <a href="https://www.facebook.com/congdoanvku" target="_blank"><i class="fab fa-facebook"width=""></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="http://daotao.vku.udn.vn/sv" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/watch?v=y7vd9Mm_Lkg&t=18s" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+     <div class="sqs-block-content">
+       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+       <div class="elfsight-app-1445945c-2780-470e-a58e-dac0342a3b33"></div>
+     </div>
+       <div class="footer">
+            <div class="row text-center">
+       <div class="col-xl-12">
+
+        <p class="infor"><span style="font-size: 19px;color: red"> &copy;</span>Đoàn thanh niên Hồ Chí Minh - Trường Đại Học Công Nghệ Thông Tin Và Truyền Thông Việt-Hàn</p>
+        <span class="text-right">
+                            <i class="fas fa-map-marker-alt"></i> 470 Trần Đại Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng<br />
+                           <i class="fas fa-phone"></i><a style="color: white;" href="tel:0915368545">0915368545</a>    Fax:<a style="color: white;" href="tel:04-62631875">04-62631875</a> <br />
+                            <i class="fal fa-envelope"></i> <a style="color: white;" href="https://mail.google.com/mail/u/0/#inbox?compose=new">daotao@vku.udn.vn</a><br>
+                            <i class="fas fa-globe"></i> <a style="color: white;" href="http://doanthanhnienvku.epizy.com/">doanthanhnienvku.epizy.com</a>
+                        </span>
+          </div>
+       </div>
+       
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Lên trang đầu"><i class="fas fa-chevron-up"></i></button>
+<script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
+</html>
